@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syncfive - Conectando Pessoas, Resíduos e Soluções Sustentáveis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+        font-family: 'Inter', sans-serif;
+      }
+      .hero-bg {
+          background-image: url('https://images.unsplash.com/photo-1517404215738-15263e9f9178?q=80&w=2940&auto=format&fit=crop');
+          background-attachment: fixed; /* Efeito de paralaxe */
+      }
+      .card-hover:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
+
+  <header class="fixed top-0 z-50 w-full bg-white bg-opacity-90 shadow-md backdrop-blur-sm transition-all duration-300">
+    <nav class="container mx-auto flex items-center justify-between p-4 md:p-6">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.postimg.cc/zG6jd7R0/Monochrome-Modern-Technology-Black-Logo-removebg-preview.png" alt="Syncfive Logo" class="h-8 md:h-10">
+      </div>
+      <div class="hidden space-x-6 md:flex">
+        <a href="#problemas" class="text-lg font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-300">O Problema</a>
+        <a href="#solucao" class="text-lg font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-300">A Solução</a>
+        <a href="#destinos" class="text-lg font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-300">Destinos</a>
+        <a href="#politicas" class="text-lg font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-300">Políticas</a>
+        <a href="#contato" class="text-lg font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-300">Contato</a>
+      </div>
+      <button class="rounded-lg p-2 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 md:hidden" aria-label="Toggle menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero - Destaque Principal -->
+    <section id="hero" class="relative flex h-[80vh] items-center justify-center text-white hero-bg bg-cover bg-center">
+        <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-4xl font-extrabold tracking-tight md:text-6xl animate-fade-in-up">
+                SyncFive: Conectando Pessoas, Resíduos e Soluções Sustentáveis
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl animate-fade-in-up delay-200">
+                Sincronize para transformar: o lixo de um é o valor do outro.
+            </p>
+            <a href="#solucao" class="mt-8 inline-block rounded-full bg-emerald-500 px-8 py-3 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-500 focus:ring-opacity-50">
+                Descubra o reUse
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Problemas -->
+    <section id="problemas" class="bg-white py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold md:text-4xl text-gray-900 mb-12">Problemas que o reUse resolve</h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600 mb-12">
+          O aplicativo reUse foi criado para solucionar desafios críticos na gestão de resíduos, conectando todas as partes interessadas para formar um ecossistema sustentável.
+        </p>
+        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Descarte sem Destino</h3>
+            <p class="mt-2 text-gray-600">
+              Empresas e produtores acumulam materiais reutilizáveis sem saber como e para onde direcioná-los.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Trabalho Invisível</h3>
+            <p class="mt-2 text-gray-600">
+              A coleta de lixo é um trabalho sem reconhecimento, incentivo ou rastreabilidade para catadores.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Dificuldade de Gestão</h3>
+            <p class="mt-2 text-gray-600">
+              A população e o poder público encontram dificuldade em gerenciar corretamente os resíduos recicláveis.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Falta de Conexão</h3>
+            <p class="mt-2 text-gray-600">
+              A ausência de uma ponte entre quem descarta e quem precisa resulta em grande desperdício e impacto ambiental.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção A Solução -->
+    <section id="solucao" class="bg-gray-100 py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold md:text-4xl text-gray-900 mb-12">A Solução: reUse</h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600 mb-12">
+          reUse, desenvolvido pela SyncFive, é um aplicativo que conecta empresas, catadores, artesãos, ONGs, agricultores e cidadãos para formar uma rede de economia circular local, baseada em trocas, reaproveitamento e recompensas sustentáveis.
+        </p>
+        <div class="mt-12 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">1. Cadastro e Inventário</h3>
+            <p class="mt-2 text-gray-600">Empresas e pessoas se cadastram no app e informam os materiais que querem descartar ou doar.</p>
+          </div>
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="mt-4 text-xl font-bold text-gray-900">2. Conexão Inteligente</h3>
+            <p class="mt-2 text-gray-600">O sistema cruza os dados para conectar quem descarta com quem precisa dos materiais.</p>
+          </div>
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="mt-4 text-xl font-bold text-gray-900">3. Logística e Rastreamento</h3>
+            <p class="mt-2 text-gray-600">O app indica pontos de coleta, agendas de retirada ou locais de entrega, com rastreamento.</p>
+          </div>
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="mt-4 text-xl font-bold text-gray-900">4. Pontos e Recompensas</h3>
+            <p class="mt-2 text-gray-600">Cada doação ou retirada gera pontos Sync, que podem ser trocados por benefícios tangíveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Destinos dos Resíduos -->
+    <section id="destinos" class="bg-white py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold md:text-4xl text-gray-900 mb-12">Destinos dos Resíduos</h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600 mb-12">
+          O reUse garante que cada material descartado tenha um destino sustentável, criando valor para toda a cadeia.
+        </p>
+        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Artesãos e pequenos produtores</h3>
+            <p class="mt-2 text-gray-600">Materiais como madeira, vidro e tecido são direcionados a artesãos locais, estimulando a economia criativa.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Cooperativas e recicladoras locais</h3>
+            <p class="mt-2 text-gray-600">Papel, plástico, metal e vidro são conectados a cooperativas, gerando renda formal para catadores.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Empresas de logística reversa</h3>
+            <p class="mt-2 text-gray-600">Pilhas, eletrônicos e óleo usado são encaminhados a empresas parceiras, garantindo a destinação correta.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Laboratórios e centros de pesquisa</h3>
+            <p class="mt-2 text-gray-600">Materiais incomuns são utilizados em universidades e escolas técnicas para projetos de inovação.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Reaproveitamento interno</h3>
+            <p class="mt-2 text-gray-600">Objetos utilizáveis, como potes e embalagens, são trocados entre os próprios usuários do app, incentivando o reuso doméstico.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Lixo orgânico e óleo de cozinha</h3>
+            <p class="mt-2 text-gray-600">Lixo orgânico e óleo usado são destinados à compostagem, fabricação de sabão ou alimentação de animais.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-gray-100 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Gesso reutilizável</h3>
+            <p class="mt-2 text-gray-600">Sobras de gesso são usadas na agricultura, indústria, oficinas de arte e construção civil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Políticas Inovadoras -->
+    <section id="politicas" class="bg-gray-100 py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold md:text-4xl text-gray-900 mb-12">Políticas Inovadoras para Inclusão e Impacto</h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600 mb-12">
+          A Syncfive vai além do aplicativo com soluções que garantem a participação de todos, incluindo quem não tem acesso à internet.
+        </p>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="text-xl font-bold text-gray-900">Cartão Syncfive</h3>
+            <p class="mt-2 text-gray-600">
+              Um cartão físico ou digital com QR code que funciona como um cartão de fidelidade. Permite que pessoas sem celular acumulem pontos e troquem por recompensas em lojas parceiras.
+            </p>
+          </div>
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="mt-4 text-xl font-bold text-gray-900">Caixa Eletrônico Syncfive</h3>
+            <p class="mt-2 text-gray-600">
+              Pontos físicos que pesam e registram o material descartado, automatizando a coleta e a pontuação para usuários, com baixo custo e alto alcance.
+            </p>
+          </div>
+          <div class="rounded-lg bg-white p-8 shadow-md card-hover text-left transition-all duration-300">
+            <h3 class="mt-4 text-xl font-bold text-gray-900">Pontos de Entrega Seletiva</h3>
+            <p class="mt-2 text-gray-600">
+              Mini-hubs instalados em bairros para facilitar a entrega de resíduos, com entregas semanais para cooperativas e mutirões de coleta.
+            </p>
+          </div>
+        </div>
+        <div class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-900">Políticas Promocionais</h3>
+            <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-600">Para garantir a adoção do app, a Syncfive propõe ações educativas e de impacto local, como campanhas em escolas, palestras em praças e parcerias com comerciantes locais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="bg-white py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold md:text-4xl">Pronto para começar?</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+          Entre em contato conosco e descubra como a Syncfive pode revolucionar a gestão de resíduos na sua empresa ou cidade. Nossa equipe está pronta para apresentar um plano personalizado.
+        </p>
+        <a href="https://wa.me/+5587996364975" target="_blank" class="mt-8 inline-block rounded-full bg-emerald-500 px-8 py-3 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-500 focus:ring-opacity-50">
+          Entrar em contato via WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 py-8 text-center text-gray-400">
+    <div class="container mx-auto px-6">
+      <p>Syncfive &copy; 2025. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
